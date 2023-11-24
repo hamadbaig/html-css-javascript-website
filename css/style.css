@@ -1,0 +1,20 @@
+:root {
+  --color-primary: #fbcd9e;
+  --color-secondary: #ff0000;
+}
+html {
+  font-size: 62.5%;
+}
+.heading {
+  font-size: 5rem;
+  color: var(--color-primary);
+  text-align: center;
+}
+h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+  background-color: black;
+  display: inline;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
