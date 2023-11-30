@@ -20,6 +20,8 @@ h2 {
   color: white;
   background-color: black;
   display: inline;
+  padding: 1rem;
+
 }
 .icon {
   height: 40px;
@@ -47,6 +49,9 @@ h2 {
   flex-wrap: wrap;
   padding: 2rem 3rem 2rem;
   align-items: center;
+  position: sticky;
+  top: 0px;
+  z-index: 100;
  }
  .list {
   list-style: none;
@@ -115,7 +120,8 @@ h2 {
 .img{
   width: 100%;
   overflow: hidden;
-  padding-bottom: 1rem;  
+  padding-bottom: 1rem; 
+  transition: transform 0.3s ease-in-out;
 }
 .img img{
   width: 100%;
@@ -127,7 +133,7 @@ h2 {
 }
 .background--img {
   background-image: url("./images/background-pic.png");
-  height: 500px;
+  height: 50rem;
   width: 100%;
   /* margin: 2rem auto; */
   background-size: cover;
@@ -143,7 +149,7 @@ h2 {
   align-items: center;
   display: flex;
   flex-direction: column;
-  height: 250px;
+  height: 25rem;
 }
 .text{
   text-align: center;
@@ -158,6 +164,189 @@ h2 {
   justify-content: center;
   align-items: center;
   display: flex;
+  margin-left: 2rem;
+  margin-right: 2rem;
+
+}
+.grid--img{
+  height: 70%;
+  width: 100%;
+  /* margin: 2rem auto; */
+  background-size: cover;
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+}
+.education{
+  background-color: black;
+  padding: 3rem ;
+  padding-top: 10rem;
+}
+.info--img{
+  
+  color: white;
+  display: flex;
+  margin-bottom: 2rem;
+}
+.deg-num{
+  font-size: 3.6rem;
+  opacity: 0.8;
+  margin-left: 2rem;
+}
+.deg-name-per{
+  font-size: 2rem;
+  margin-left: 2rem;
+}.paragraph{
+  font-size: 1.2rem;
+  opacity: 0.8;
+}
+.achievements{
+  justify-content: center;
+  text-align: center;
+}
+.ach--sub{
+  padding: 2rem 4rem;
+}
+.ach--img{
+  margin-bottom: 2rem;
+}
+.ach--year{
+  font-size: 2.2rem;
+  opacity: 0.8;
+}
+.ach--title{
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.ach--detail{
+  font-size: 1.8rem;
+  opacity: 0.8;
+}
+.experience{
+  justify-content: center;
+  text-align: center;
+  padding: 2rem 4rem;
+}
+
+.exp-year{
+  font-size: 2.0rem;
+  opacity: 0.8;
+}
+.exp-name{
+  font-size: 2.0rem;
+  opacity: 0.8;
+}
+.exp-title{
+  font-size: 2.7rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.exp-detail{
+  font-size: 1.8rem;
+  opacity: 0.8;
+}
+.logo--detail{
+  margin-bottom: 2rem;
+}
+.f--footer{
+  background-color: black;
+  color: white;
+  justify-content: center;
+  padding: 8rem 3rem;
+  line-height: 1.5;
+}
+.s--footer{
+  margin-top: 2px;
+  background-color: black;
+  color: white;
+  justify-content: center;
+  text-align: center;
+  line-height: 1.5;
+  font-size: 26px;;
+}
+.para2{
+  text-align: left;
+  padding: 2rem;
+  background-color: black;
+  color: white;
+}
+.para3{
+  text-align: center;
+  padding: 2rem;
+  background-color: black;
+  color: white;
+}
+.f-list1{
+  margin-bottom: 3rem;
+  font-size: 32px;
+}
+.para{
+  font-size: 40px;
+  margin-bottom: 3rem;
+}.email{
+  font-size: 25px;
+}
+.number{
+  font-size: 25px;
+}
+/* route page */
+.h--img{
+
+  object-fit: cover; 
+  object-position: center;
+  padding-left: 1rem;
+  margin-right: 1rem;
+}
+.hh--img{
+  width: 98%;
+  height: 450px;
+}
+.fatal{
+  justify-content: center;
+  text-align: center;
+}
+.errors{
+  font-size: 2.7rem;
+}
+.text{
+  opacity: 0;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  justify-content: center;
+  padding: 15px;
+  transition: opacity 0.3s ease-in-out;
+}
+.up {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.up:hover .img {
+  transform: translateY(-100px);
+}
+.up:hover .text {
+  opacity: 1;
+}
+.error-flex{
+  margin-top: 6rem;
+  margin-bottom: 3rem;
+}
+.error-flex p{
+  padding: 0rem 4rem;
+  font-size: 25px;
+}
+.error-flex table{
+  padding: 0rem 4rem;}
+
+.table td, .table th {
+  padding: 1rem;
+  font-size: 30px;
+}
+.routing{
+  color: black;
 }
 @media screen and (min-width: 768px) {
   .nav__toggler{
@@ -183,6 +372,17 @@ h2 {
     display: grid;
     grid-template-columns: repeat(2,1fr);
   }
+  .logo--detail{
+    display: flex;
+  }
+  .exp--year-title-name-detail{
+    margin-left: 3rem;
+    text-align: left;
+    line-height: 1.5;
+  }
+ .error-flex{
+  display:flex;
+ }
 }
 @media screen and (min-width: 1024px) {
   .work-content .list .nav__item{
@@ -192,5 +392,34 @@ h2 {
     display: grid;
     grid-template-columns: repeat(3,1fr);
   }
- 
+  .background--img {
+    height: 100rem;
+  }
+  .slider{
+    height: 40rem;
+  }
+  .grid--1x2{
+    display: flex;
+  }
+  .achievements{
+    display: flex;
+  }
+  .experience{
+    padding:10rem 20rem ;
+  }
+  .line{
+    justify-content: center;
+    text-align: center;
+    /* content: ""; */
+    width: 5px;
+    height: 60%;
+    background-color: red;
+    position: absolute;
+    left: 50%;
+  }
+  .flex{
+    display: flex;
+    flex-direction: column;
+  }
+  
 }
